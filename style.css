@@ -1,0 +1,329 @@
+
+/* Mobile version*/
+
+
+
+@media only screen and (max-width: 760px) {
+
+.center {
+    text-align: center;
+  }
+
+.nav {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  display: block;
+  background-color: #c78c06;
+  color: #c78c06;
+
+}
+
+.h1 {
+  position:relative;
+}
+}
+
+/* Desktop version*/
+
+
+
+ 
+
+body {
+  margin: 0;
+}
+
+/* nav and header */
+header {
+  background-color: #222;
+}
+
+nav {
+  color: #c78c06;
+  display: inline-flex;
+}
+
+.pageLink {
+  height: 50px;
+  width: 100px;
+}
+
+.searchBtn {
+  color: #c78c06;
+  border: solid 1px;
+  background-color: #222;
+  border-color: #c78c06;
+}
+
+.pageLink :hover {
+  background-color: #c78c06;
+  color: #222;
+}
+
+/* end of nav */
+
+/* welcome section */
+
+.welcome {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+
+.connectBtn {
+  background-color: #c78c06;
+  border: none;
+  padding: 20px 15px;
+  margin: 5px;
+  width: 175px;
+}
+
+.bgWelcome {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+
+
+
+.blackBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  opacity: 0.75;
+}
+
+.blackBox > h1{
+  font-size: 4rem;
+}
+
+/* end of welcome section */
+
+/* About Us Section */
+.about {
+  margin: 0;
+  background-color: #FFE6AC;
+  height: 300px;
+  width: 100%;
+}
+
+.about>img {
+  padding-top: 25px;
+  float: left;
+  height: 250px;
+  width: auto;
+  margin-left: 150px;
+  padding-right: 25px;
+}
+
+.about>h1,
+p {
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+/* End of About Us Section */
+
+/* Services Section */
+.servicesSections{
+  margin: 0 100px;
+}
+
+.services {
+  /* use display grid with grid area with 6 columns. first two blocks span 3 and the btm 3 blocks span 2 */
+  display: grid;
+  grid-template-columns: repeat(6, 165px);
+  grid-template-rows: repeat(2, 425px);
+  /* width: 800px; */
+ 
+}
+
+.block>h2,
+p {
+
+  padding-left: 10px;
+}
+
+.block>img {
+  object-fit: fill;
+}
+
+.block {
+  background-color: #FFE6AC;
+  margin: 5px 10px;
+  /* word-wrap: break-word; */
+  margin-left: 10px;
+}
+
+.services :nth-child(1) {
+  grid-column: 1/span 3;
+}
+
+.services :nth-child(2) {
+  grid-column: 4/span 3;
+}
+
+.services :nth-child(3) {
+  grid-column: 1/span 2;
+}
+
+.services :nth-child(4) {
+  grid-column: 3/span 2;
+}
+
+.services :nth-child(5) {
+  grid-column: 5/span 2;
+}
+
+.servicesBtn {
+  background: #222;
+  color: white;
+  border: none;
+  width: fit-content;
+  padding: 10px 0px;
+  margin: 5px;
+  width: 95%;
+  height: 50px;
+}
+
+/* End of Services Section */
+
+/* Our Vision Section */
+.vision {
+  margin-top: 50px;
+  position: relative;
+  text-align: left;
+  color: white;
+  height: 337px;
+}
+
+.bgVision {
+  width: 100%;
+  height: 337px;
+  object-fit: cover;
+}
+
+.overVision {
+  position: absolute;
+  padding-left: 100px;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.visionBtn {
+  background: #11253d;
+  color: white;
+  border: solid 2px;
+  border-color: #c78c06;
+  padding: 10px 0px;
+  height: 75px;
+  width: 300px;
+}
+
+/* End of Our Vision Section */
+
+/* Our Team Section */
+.teamSection{
+  margin: 0 100px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFE6AC;
+  width: 1050px;
+  
+}
+
+.team>h2 {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  color: #c78c06;
+}
+
+.memberJohn {
+  background-color: #FFE6AC;
+  width: 90%;
+}
+
+.photoJohn {
+  float: left;
+  width: auto;
+  height: 350px;
+  padding-right: 10px;
+}
+
+.photoBob {
+  float: right;
+  width: auto;
+  height: 350px;
+  padding-left: 10px;
+}
+
+
+/* End of Our Team Section */
+
+
+
+/* Contact Us Section */
+.contact {
+  margin: 0 100px;
+}
+
+.contact>h1 {
+  font-size: 2rem;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+th {
+  background-color: #FFE6AC;
+}
+
+td{
+  text-align: left;
+  
+}
+
+tr {
+  height: 50px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.operationHrs {
+  margin: 0 100px;
+}
+
+/* End of Contact Us Section */
+
+/* Footer Section */
+
+footer {
+  background-color: #222;
+  color: #c78c06;
+}
+
+footer>a {
+  color: #c78c06;
+}
+
+
+/* End of Footer Section */
+
+
+
+
+
